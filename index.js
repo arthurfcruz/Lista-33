@@ -13,7 +13,7 @@ function ContarVogais(frase) {
     return indexVogal;
 }
 console.log(ContarVogais(frase));
-var palavra = "maluco";
+var palavra = " pneumoultramicroscopicossilicovulcanoconiotico";
 function MeioDaFrase(palavra) {
     var meio = palavra.split("");
     var index = meio.length;
@@ -29,3 +29,12 @@ function MeioDaFrase(palavra) {
     return metade;
 }
 console.log(MeioDaFrase(palavra));
+var numero = 5793;
+function AcharMaiorNumero(numero) {
+    var numeroString = numero.toString();
+    var array = numeroString.split("");
+    array = array.sort(function (a, b) { return parseInt(b) - parseInt(a); });
+    var array2 = array.toString().replace(/,/g, "");
+    return parseInt(array2);
+}
+console.log(AcharMaiorNumero(numero));
